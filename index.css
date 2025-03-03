@@ -1,0 +1,87 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    width: 100vw;
+    height: 10vh;
+    background-color: #333333;
+    display: flex;
+}
+
+.nav-left {
+    width: 10vw;
+}
+
+.nav-left img {
+    border-radius: 50%;
+    width: 5vw;
+    height: 10vh;
+}
+
+.nav-right {
+    width: 90vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    /* align-items: center; */
+}
+
+.nav-menu li {
+    display: inline;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.nav-menu li:hover {
+    transform: scale(1.05);
+}
+
+#login-button {
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    margin: 0 2em;
+    padding: 0.5em 0.75em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#login-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media screen and (max-width: 1350px) {
+    .nav-menu {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-menu {
+        width: 60vw;
+    }
+}
+
+.banner {
+    width: 100vw;
+    height: 32vh;
+    background-color: #dddddd;
+}
+
+.banner img {
+    width: 100vw;
+    max-height: 35vh;
+}
