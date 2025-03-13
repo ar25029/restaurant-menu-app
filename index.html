@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Restaurant Menu | HomePage</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="assets/logo.jpg" alt="Restaurant Logo" />
+      </div>
+      <div class="nav-right">
+        <a href="signup.html"><button id="login-button">Login</button></a>
+        <ul class="nav-menu">
+          <li>Home</li>
+          <li>Our Menu</li>
+          <li>Current Offers</li>
+          <li>Know us more</li>
+          <li>order</li>
+          <li>Cart (<span id="cartSize">0</span>)</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="banner">
+      <div class="offer-image">
+        <img src="assets/offer-banner.jpg" alt="special offer" />
+      </div>
+    </div>
+    <div id="all-offer-container">
+      <button id="all-offer">Checkout All Offers</button>
+    </div>
+    <div id="menu-container">
+      <span id="menu-title">OUR MENU</span>
+      <hr id="menu-title-underline" />
+      <div class="top-3-component">
+        <div class="top-3-title">
+          <span>Best Seller</span>
+          <button>View All</button>
+        </div>
+        <!-- menu card will be here -->
+        <div class="top-3-card">
+          <!-- three food cards -->
+          <div class="food-card">
+            <img
+              class="food-image"
+              src="assets/best-seller-1.jpg"
+              alt="best seller image"
+            />
+            <span class="food-title">Best seller item 1</span>
+            <span class="food-details">The amount of fat in a serving.</span>
+            <span class="food-price">5$ 20% off</span>
+            <button class="food-cart-button">Add to cart</button>
+          </div>
+          <div class="food-card">
+            <img
+              class="food-image"
+              src="assets/best-seller-2.jpg"
+              alt="best seller image"
+            />
+            <span class="food-title">Best seller item 2</span>
+            <span class="food-details"
+              >The amount of cholesterol in a serving.</span
+            >
+            <span class="food-price">5$ 20% off</span>
+            <button class="food-cart-button">Add to cart</button>
+          </div>
+          <div class="food-card">
+            <img
+              class="food-image"
+              src="assets/best-seller-3.jpg"
+              alt="best seller image"
+            />
+            <span class="food-title">Best seller item 3</span>
+            <span class="food-details"
+              >The amount of food that's considered a serving.</span
+            >
+            <span class="food-price">5$ 20% off</span>
+            <button class="food-cart-button">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="top-3-component">
+        <div class="top-3-title">
+          <span>Best Course</span>
+          <button>View All</button>
+        </div>
+        <!-- menu card will be here -->
+      </div>
+      <div class="top-3-component">
+        <div class="top-3-title">
+          <span>Breakfast</span>
+          <button>View All</button>
+        </div>
+        <!-- menu card will be here -->
+      </div>
+      <div class="top-3-component">
+        <div class="top-3-title">
+          <span>Lunch</span>
+          <button>View All</button>
+        </div>
+        <!-- menu card will be here -->
+      </div>
+      <div class="top-3-component">
+        <div class="top-3-title">
+          <span>Dinner</span>
+          <button>View All</button>
+        </div>
+        <!-- menu card will be here -->
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-section-1">
+          <img src="assets/logo.jpg" alt="image logo" />
+        </div>
+        <div class="footer-section-2">
+          <h2>Quick Links</h2>
+          <span>Our Menu</span>
+          <span>Our Offers</span>
+          <span>Know what we have achieved</span>
+        </div>
+        <div class="footer-section-3">
+          <h2>Wanna Get Updated with Our Exciting Offers?</h2>
+          <span>Follow us on:</span>
+          <span>Instagram | Twitter | Facebook</span>
+          <hr class="hr-line" />
+          <form>
+            <input
+              type="email"
+              placeholder="Subscribe for daily Exciting offers"
+              class="email-input"
+            />
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        Term & Condition | Privacy Policy &copy; Copryright 2024 All Right
+        Reserved
+      </div>
+    </footer>
+  </body>
+</html>

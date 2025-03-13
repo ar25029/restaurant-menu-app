@@ -1,0 +1,52 @@
+/* sign in and sign up page */
+
+#signup-body,
+#signin-body {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 320px;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    text-align: center;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: medium;
+}
+
+form input {
+    margin-top: 5px;
+    height: 30px;
+    font-size: medium;
+}
+
+form button {
+    margin-top: 20px;
+    background-color: #c70505;
+    border: none;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: large;
+}
+
+form span {
+    margin-top: 20px;
+    text-align: center;
+}
