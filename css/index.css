@@ -46,6 +46,11 @@ body {
     transition: transform 0.1s ease;
 }
 
+.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .nav-menu li:hover {
     transform: scale(1.05);
 }

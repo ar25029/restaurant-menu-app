@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Restaurant</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="assets/logo.jpg" alt="Restaurant Logo" />
+      </div>
+      <div class="nav-right">
+        <a href="signup.html"><button id="login-button">Login</button></a>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="#">Current Offers</a></li>
+          <li><a href="#">Know us more</a></li>
+          <li><a href="#">Order</a></li>
+          <li>
+            <a href="#">Cart (<span id="cartSize">0</span>)</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="menu-banner">
+      <h1>OUR MENU</h1>
+    </div>
+    <div class="menu-search">
+      <input type="text" placeholder="what do you want to search..." />
+      <div class="meanu-search-categories">
+        <button class="active">All</button>
+        <button>Beverage</button>
+        <button>Main Course</button>
+        <button>Combos</button>
+      </div>
+    </div>
+    <div class="menu-sections">
+      <h1>Best Seller</h1>
+      <div class="menu-section-items">
+        <!-- dynamic menu item list -->
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-section-1">
+          <img src="assets/logo.jpg" alt="image logo" />
+        </div>
+        <div class="footer-section-2">
+          <h2>Quick Links</h2>
+          <span>Our Menu</span>
+          <span>Our Offers</span>
+          <span>Know what we have achieved</span>
+        </div>
+        <div class="footer-section-3">
+          <h2>Wanna Get Updated with Our Exciting Offers?</h2>
+          <span>Follow us on:</span>
+          <span>Instagram | Twitter | Facebook</span>
+          <hr class="hr-line" />
+          <form>
+            <input
+              type="email"
+              placeholder="Subscribe for daily Exciting offers"
+              class="email-input"
+            />
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        Term & Condition | Privacy Policy &copy; Copryright 2024 All Right
+        Reserved
+      </div>
+    </footer>
+    <script src="menu.json"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
