@@ -73,6 +73,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
+    background-color: #fffefe;
 }
 
 .menu-sections>h1 {
@@ -83,14 +84,16 @@
 .menu-section-items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px 10px;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    row-gap: 20px;
 }
 
 .menu-item {
-    width: 230px;
-    height: auto;
-    background-color: #efefef;
+    width: 15%;
+    height: 350px;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,17 +101,32 @@
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    transition: all 0.2s ease;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 10px;
 }
 
-.menu-item:hover {
-    transform: scale(1.01);
+@media screen and (max-width: 1400px) {
+    .menu-item {
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-item {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu-item {
+        width: 35%;
+    }
 }
 
 .menu-item img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 50%;
     border-radius: 10px 10px 0 0;
 }
 
@@ -116,13 +134,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
     align-items: center;
+    height: 50%;
+}
+
+.hidden {
+    display: none;
+    border: none;
 }
 
 .menu-item-details .item-name {
     color: red;
-    font-size: large;
+    font-size: medium;
     text-transform: capitalize;
 
 }
@@ -134,22 +157,32 @@
 }
 
 .menu-item-details .price {
-    font-size: large;
     color: #028002;
     font-weight: bold;
 }
 
 .menu-item-details .add-to-cart {
     border: none;
-    border-radius: 0 0 10px 10px;
-    background-color: #c7c7c1;
+    border-radius: 5px;
+    background-color: #b50303;
     color: #000;
     font-size: medium;
     cursor: pointer;
-    width: 100%;
-    height: 50px;
+    padding: 5px;
 }
 
-.hidden {
-    display: none;
+.menu-item:hover .menu-item-details {
+    padding-bottom: 0px;
+}
+
+.menu-item:hover .hidden {
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
 }

@@ -1,5 +1,6 @@
 const menuButton = document.querySelectorAll(".meanu-search-categories button");
 
+// menu search button active for all beverage and others
 menuButton.forEach((button, index) => {
   button.addEventListener("click", () => {
     for (let i = 0; i < menuButton.length; i++) {
@@ -11,10 +12,11 @@ menuButton.forEach((button, index) => {
   });
 });
 
+// menu item list display function
 const menuSectionItems = document.querySelector(".menu-section-items");
 
-function displayMenuItems(item) {
-  const card = `
+menuItemData.forEach((item) => {
+  menuSectionItems.innerHTML += `
         <div class="menu-item">
           <img src=${item.img} alt=${item.alt} />
             <div class="menu-item-details">
@@ -23,28 +25,27 @@ function displayMenuItems(item) {
                 ${item.description}
               </p>
               <p class="price">Price:${item.price}</p>
-              <button class="add-to-cart hidden">Add to Cart</button>
+              <button id=${item.id} class="add-to-cart hidden">Add to Cart</button>
             </div>
         </div>
         `;
-  return card;
-}
-function fetchData() {
-  fetch("menu.json")
-    .then((response) => {
-      if (response.status !== 200) {
-        throw new Error("Error");
+});
+
+// add to cart button while hover on menu itemmen
+const menuItems = document.querySelectorAll(".menu-item");
+const addToCartButton = document.querySelectorAll(".add-to-cart");
+
+localStorage.setItem("cart", JSON.stringify([]));
+let cart = JSON.parse(localStorage.getItem("cart"));
+
+addToCartButton.forEach((button) => {
+  button.addEventListener("click", () => {
+    menuItemData.forEach((item) => {
+      if (item.id == button.id) {
+        cart.push(item);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        console.log(JSON.parse(localStorage.getItem("cart")));
       }
-      return response.json();
-    })
-    .then((data) => {
-      data.forEach((item) => {
-        const cardItem = displayMenuItems(item);
-        menuSectionItems.innerHTML += cardItem;
-      });
-    })
-    .catch((error) => {
-      console.error("Error:", error);
     });
-}
-fetchData();
+  });
+});
