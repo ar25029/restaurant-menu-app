@@ -17,7 +17,7 @@ const menuSectionItems = document.querySelector(".menu-section-items");
 
 menuItemData.forEach((item) => {
   menuSectionItems.innerHTML += `
-        <div class="menu-item">
+        <div id=${"product-" + item.id} class="menu-item">
           <img src=${item.img} alt=${item.alt} />
             <div class="menu-item-details">
               <h3 class="item-name">${item.name}</h3>
@@ -25,10 +25,19 @@ menuItemData.forEach((item) => {
                 ${item.description}
               </p>
               <p class="price">Price:${item.price}</p>
-              <button id=${item.id} class="add-to-cart hidden">Add to Cart</button>
+              <button id=${
+                item.id
+              } class="add-to-cart hidden">Add to Cart</button>
             </div>
         </div>
         `;
+});
+
+menuItemData.forEach((item) => {
+  const productItem = document.getElementById("product-" + item.id);
+  productItem.addEventListener("click", () => {
+    window.open(`productDetails.html?id=${item.id}`, "_blank");
+  });
 });
 
 // add to cart button while hover on menu itemmen

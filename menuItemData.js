@@ -5,7 +5,7 @@ const menuItemData = [
     alt: "menu item",
     name: "Chicken Tikka Masala",
     description: "chicken cooked in spicy tomato gravy with cream.",
-    price: "$12",
+    price: "12",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const menuItemData = [
     alt: "menu item",
     name: "Lamb Rogan Josh",
     description: "lamb cooked in a rich and flavorful sauce.",
-    price: "$15",
+    price: "15",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const menuItemData = [
     alt: "menu item",
     name: "Butter Chicken",
     description: "chicken cooked in creamy tomato sauce.",
-    price: "$13",
+    price: "13",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const menuItemData = [
     alt: "menu item",
     name: "Chole Bhature",
     description: "spicy chickpeas served with fried bread.",
-    price: "$8",
+    price: "8",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const menuItemData = [
     alt: "menu item",
     name: "Biryani",
     description: "fragrant rice cooked with spices and meat.",
-    price: "$14",
+    price: "14",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const menuItemData = [
     alt: "menu item",
     name: "Dosa",
     description: "crispy rice pancake served with chutney and sambar.",
-    price: "$7",
+    price: "7",
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const menuItemData = [
     alt: "menu item",
     name: "Samosa",
     description: "fried pastry filled with spiced potatoes and peas.",
-    price: "$5",
+    price: "5",
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const menuItemData = [
     alt: "menu item",
     name: "Gulab Jamun",
     description: "sweet milk dumplings soaked in syrup.",
-    price: "$6",
+    price: "6",
   },
   {
     id: 9,
@@ -69,6 +69,6 @@ const menuItemData = [
     alt: "menu item",
     name: "Rasgulla",
     description: "soft cheese balls soaked in syrup.",
-    price: "$6",
+    price: "6",
   },
 ];
