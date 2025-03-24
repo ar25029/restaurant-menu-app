@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>you cart</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="assets/logo.jpg" alt="Restaurant Logo" />
+      </div>
+      <div class="nav-right">
+        <a href="signup.html"><button id="login-button">Login</button></a>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="#">Current Offers</a></li>
+          <li><a href="#">Know us more</a></li>
+          <li><a href="#">Order</a></li>
+          <li>
+            <a href="cart.html">Cart (<span id="cartSize">0</span>)</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="menu-banner">
+      <h1>OUR CART</h1>
+    </div>
+    <div class="menu-sections">
+      <h1>Your Cart items</h1>
+      <div class="menu-section-items">
+        <!-- dynamic menu item list -->
+         <div class="menu-items cart-items"></div>
+      </div>
+    </div>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

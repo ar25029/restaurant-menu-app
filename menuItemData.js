@@ -72,3 +72,16 @@ const menuItemData = [
     price: "6",
   },
 ];
+const productToken = [];
+const tokenizeProducts = () => {
+  for (let i = 0; i < menuItemData.length; i++) {
+    const title = menuItemData[i].name.replace(/[0-9]/, "");
+    const description = menuItemData[i].description.replace(/[0-9]/, "");
+    const token = title.split(" ").concat(description.split(" "));
+    productToken.push({
+      id: menuItemData[i].id,
+      tokens: token,
+    });
+  }
+};
+tokenizeProducts();

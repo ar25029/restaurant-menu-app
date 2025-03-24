@@ -76,12 +76,22 @@
     background-color: #fffefe;
 }
 
-.menu-sections>h1 {
+.search-sections {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fffefe;
+}
+
+.menu-sections>h1,
+.search-sections>h1 {
     font-family: 'Trebuchet MS', sans-serif;
     border-left: 2px solid red;
 }
 
-.menu-section-items {
+.menu-section-items,
+.search-section-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
